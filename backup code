@@ -1,0 +1,94 @@
+<!-- KONTAK SEKOLAH -->
+<section class="kontak-section" id="kontak">
+  <h3 class="judul-kontak">KONTAK</h3>
+  <h2 class="subjudul-kontak">Informasi Kontak</h2>
+  <div class="kontak-container">
+    <div class="kontak-info">
+      <p><strong>📍 Alamat:</strong> Jl. Praya Limbong, Pangala' Utara, Toraja Utara, Sulawesi Selatan</p>
+      <p><strong>📞 Telepon:</strong> (0423) 212345</p>
+      <p><strong>📧 Email:</strong> sman4torajautara@gmail.com</p>
+    </div>
+    <div class="sosmed">
+      <h4>Media Sosial</h4>
+      <a href="https://facebook.com/sman4torajautara" target="_blank"><i class="fa-brands fa-facebook"></i>   SMAN 4 TORAJA UTARA</a>
+      <br>
+      <a href="https://instagram.com/sman4torajautara" target="_blank"><i class="fa-brands fa-instagram"></i> @smanegeri4torajautara</a>
+      <br>
+      <a href="https://tiktok.com/@sman4torajautara" target="_blank"><i class="fa-brands fa-tiktok"></i>SMAN 4 TORAJA UTARA</a>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d200.07884612054005!2d119.810505558658!3d-2.8983715463267345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d93c0b547e6a52d%3A0xe1bcb79a78eb9e0d!2sSMA%20Negeri%204%20Toraja%20Utara!5e1!3m2!1sid!2sid!4v1745641773303!5m2!1sid!2sid" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+
+
+/* KONTAK SEKOLAH */
+.kontak-section {
+  background-color: #f1f1f1;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.judul-kontak {
+  color: #5673d4;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.subjudul-kontak {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.kontak-container {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: left;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.kontak-info p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.sosmed {
+  margin-top: 20px;
+}
+
+.sosmed h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #004aad;
+}
+
+.sosmed a {
+  display: inline-block;
+  margin-right: 15px;
+  text-decoration: none;
+  color: #191919;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.sosmed a:hover {
+  color: #5673d4;
+}
+
+
+
+
+ background-color: white;
+  width: 900px;
+  height: 200px;
+  padding: 2px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  text-align: left;
+}

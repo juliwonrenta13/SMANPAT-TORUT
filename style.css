@@ -1,0 +1,721 @@
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #9a9a9a;
+}
+
+/* navbar */
+nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav div img {
+  width: 50px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: "Segoe UI", sans-serif;
+  color: #191919;
+  font-weight: 600;
+  padding: 8px 0;
+  transition: all;
+  transition-duration: 300ms;
+  border-bottom: 1px solid rgba(255, 68, 0, 0);
+}
+
+nav ul li a:hover {
+  color: rgb(8, 10, 128);
+  border-bottom: 1px solid rgb(24, 7, 119);
+}
+
+/* JUMBOTRON */
+
+.banner {
+    background: url(halaman-sekolah.jpg) no-repeat center center;
+    background-size: cover ;
+    color:white ;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    position: relative;
+}
+h3 {
+    color: rgb(76, 0, 255);
+    font-weight: bold;
+}
+
+.banner-text {
+  position: relative;
+  z-index: 2;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 20px
+}
+.navbar {
+  position: fixed;
+}
+
+.logo-text {
+    font-family: "Segoe UI", sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-left: 10px;
+    color: #191919;
+  }
+  
+  .banner {
+    position: relative;
+    color: white;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.3));
+    z-index: 1;
+  }
+  
+  .banner-text {
+    position: relative;
+    z-index: 2;
+  }
+
+  /* VISI MISI sekolah */
+.visi-misi-section {
+  padding: 60px 0;
+  background-color: white;
+}
+
+.visi-misi-section .left-title {
+  flex: 1;
+  font-weight: bold;
+  font-size: 50px;
+  color: #004aad; /* biru tua */
+}
+
+.visi-misi-section .left-title h2 {
+  white-space: pre-line;
+  font-size: 50px;
+}
+
+.visi-misi-section .right-content {
+  flex: 2;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.visi-misi-section .right-content h3 {
+  font-weight: bold;
+  color: #004aad;
+  margin-top: 10px;
+  font-size: 50px;
+}
+
+.visi-misi-section .right-content ul {
+  padding-left: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.visi-misi-section .right-content li {
+  margin-bottom: 8px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.vr {
+  width: 1px;
+  background-color: #e21717;
+  height: 100%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* PROFIL */
+.judul-profil {
+  color: #5673d4;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.subjudul-profil1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #333;
+  text-align: center;
+ 
+  
+}
+.profil-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+  padding: 40px 20px;
+}
+
+.profil-img-kolom {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  min-width: 280px;
+}
+
+.profil-img-kolom img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.profil-deskripsi {
+  flex: 2;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+/* Galeri Kegiatan */
+.galeri-kegiatan {
+  background-color: #fff7e6;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.judul-galeri {
+  color: #5673d4;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.subjudul-galeri {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.galeri-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.kegiatan-item {
+  background-color: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.kegiatan-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.kegiatan-item h4 {
+  font-size: 16px;
+  margin: 8px 0 4px;
+  color: #222;
+}
+
+.kegiatan-item p {
+  font-size: 14px;
+  color: #555;
+}
+.lightbox-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.lightbox-img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+}
+
+
+/* Fasilitas Sekolah */
+.fasilitas-sekolah {
+  background-color: #fff7e6;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.fasilitas-sekolah .judul-fasilitas {
+  color: #5673d4;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.fasilitas-sekolah .subjudul-fasilitas {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.fasilitas-sekolah .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.fasilitas-sekolah .fasilitas-item {
+  background-color: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.fasilitas-sekolah .fasilitas-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.fasilitas-sekolah .fasilitas-item h4 {
+  font-size: 16px;
+  margin: 8px 0 4px;
+  color: #222;
+}
+
+.fasilitas-sekolah .fasilitas-item p {
+  font-size: 14px;
+  color: #555;
+}
+
+
+
+
+/* Ekstrakurikuler */
+.ekskul-section {
+  background-color: #e9f5ff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.judul-ekskul {
+  color: #5673d4;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.subjudul-ekskul {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.ekskul-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.ekskul-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.ekskul-card:hover {
+  transform: translateY(-5px);
+}
+
+.ekskul-card img {
+  width: 100%;
+  height: 140Px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.ekskul-card p {
+  font-size: 16px;
+  color: #222;
+  font-weight: bold;
+}
+
+/* Daftar Prestasi */
+.prestasi-section {
+  background-color: #eaf4ff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.judul-prestasi {
+  color: #5673d4;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.subjudul-prestasi {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.prestasi-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.prestasi-card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+
+.prestasi-card:hover {
+  transform: translateY(-5px);
+}
+
+.prestasi-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.prestasi-card h4 {
+  font-size: 16px;
+  margin: 8px 0 4px;
+  color: #222;
+}
+
+.prestasi-card p {
+  font-size: 14px;
+  color: #555;
+}
+.snbp {
+  text-align: center;
+}
+
+
+/* SNBP Prestasi */
+.snbp-section {
+  background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.judul-snbp {
+  color: #5673d4;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.subjudul-snbp {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.snbp-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.snbp-img {
+  width: 376px;
+  height: 315px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.snbp-deskripsi {
+  flex: 1;
+  text-align: left;
+  max-width: 500px;
+}
+
+.snbp-deskripsi h4 {
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.snbp-deskripsi p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+
+/* KONTAK SEKOLAH */
+.kontak-section {
+  background-color: #f1f1f1;
+  padding: 60px ;
+  text-align: center;
+}
+
+.judul-kontak { 
+  color: #5673d4;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.subjudul-kontak {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.kontak-container {
+ max-width: 850px;
+  margin: 0 auto;
+  text-align: left;
+  background: white;
+  padding: 30px;
+  border-radius: px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.kontak-info p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.sosmed {
+  margin-top: 20px;
+}
+
+.sosmed h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #004aad;
+}
+
+.sosmed a {
+  display: inline-block;
+  margin-right: 15px;
+  text-decoration: none;
+  color: #191919;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.sosmed a:hover {
+  color: #5673d4;
+}
+
+
+    /* Desain Form Hubungi Kami */
+    body {
+      background: #e9f5ff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .hubungi-container {
+      max-width: 600px;
+      margin: 100px auto;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    .hubungi-container h2 {
+      text-align: center;
+      color: #004aad;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+    .hubungi-container form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .hubungi-container input,
+    .hubungi-container textarea {
+      padding: 14px;
+      border: 2px solid #d3d3d3;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: all 0.3s ease;
+      background: #f9f9f9;
+    }
+    .hubungi-container input:focus,
+    .hubungi-container textarea:focus {
+      border-color: #004aad;
+      background: #fff;
+    }
+    .hubungi-container button {
+      background-color: #004aad;
+      color: white;
+      padding: 14px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .hubungi-container button:hover {
+      background-color: #00348a;
+    }
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+    }
+    /* Responsive */
+    @media (max-width: 600px) {
+      .hubungi-container {
+        margin: 60px 20px;
+      }
+    }
+
+
+
+/* FOOTER */
+.footer-grid {
+  background-color: #000;
+  color: #fff;
+  padding: 50px 20px 20px;
+  margin-top: 80px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.footer-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-brand h2 {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.footer-brand p {
+  font-size: 16px;
+  color: #ccc;
+}
+
+.footer-contact h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons a {
+  font-size: 28px;
+  color: white;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #5673d4;
+  transform: scale(1.2);
+}
+
+.footer-contact p {
+  font-size: 16px;
+  color: #ccc;
+  margin: 6px 0;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+}
+
+
+
+
+
+
+
