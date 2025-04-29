@@ -20,7 +20,7 @@ function showPrestasi(pesan) {
   alert("Informasi Prestasi: " + pesan);
 }
 
-// hubungi kami
+// hubungi kami 
 function kirimPesan(event) {
   event.preventDefault();
   const nama = document.getElementById('nama').value;
@@ -31,3 +31,4 @@ function kirimPesan(event) {
     alert('Mohon isi nama Anda.');
   }
 }
+

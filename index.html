@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SMAN 4 TORAJA UTARA</title>
    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-   <script src="script.js"></script>
-   <link rel="shortcut icon" href="android-chrome-192x192.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">>
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-  
+
+
+   <script src="script.js"></script>
     
   <!-- FONTAWESOME -->
   <script src="https://kit.fontawesome.com/43625f5228.js" crossorigin="anonymous"></script>
@@ -20,27 +21,39 @@
 <div class="container"></div>
 <!-- navbar -->
 <nav>
-    <div class="logo">
+    <div class="logo">  
       <img src="img/LOGO SEKOLAH.jpg" alt="logo" width="10" />
       <span class="logo-text">SMAN 4 TORAJA UTARA</span>
     </div>
-    <ul>
-      <li><a href="#home" id="beranda">Beranda</a></li>
-      <li><a href="#profsekolah" id="profil">Profil</a></li>
+
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <ul id="nav-links">
+      <li><a href="#depan" id="beranda">Beranda</a></li>
+      <li><a href="#dataprofil" id="profil">Profil</a></li>
       <li><a href="#ekskul" id="eskul">Ekstrakurikuler</a></li>
       <li><a href="#foto" id="galeri">Galery</a></li>
       <li><a href="#sarpras" id="fasilitas">Fasilitas</a></li>
       <li><a href="#juara" id="prestasi">Prestasi</a></li>
       <li><a href="#kontak" id="kontaK">Kontak</a></li>
     </ul>
+   
+
   </nav>
+ 
   
+
+
+
+
  
    <!-- jumbotron/banner -->
-   <div class="container-fruid banner" >
+   <div class="container-fluid banner" >
     <div class="overlay"></div>
     <div class="container text-center banner-text">
-      <h4 class="display-6" id="home"><strong>Selamat Datang di Website</strong></h4>
+      <h4 class="display-6" id="depan"><strong>Selamat Datang di Website</strong></h4>
       <h3 class="display-1">SMAN 4 TORAJA UTARA</h3>
     </div>
   </div>
@@ -69,18 +82,15 @@
 
 
 <!-- Profil -->
-<section class="profil-sekolah" id="profsekolah">
+<section class="profil-sekolah" id="dataprofil">
   <h3 class="judul-profil">Profil </h3>
   <h2 class="subjudul-profil1">Profil Sekolah</h2>
   <div class="profil-container">
-    <!-- Kiri: Foto kepala sekolah dan bersama guru -->
+    <!-- Kiri: Foto kepala sekolah -->
     <div class="profil-img-kolom">
       <img src="img/Foto Kepsek.jpeg" alt="Foto Kepsek">
       <h5>Riandoyo, S.Pd, M.Pd</h5>
-      <h6> (Kepala UPT SMAN 4 TORAJA UTARA)</h6>
-
-      <img src="img/FOTO BERSAMA GURU.jpg" alt="Foto Guru">
-      <h4>Foto Bersama guru</h4>
+      <h6>(Kepala UPT SMAN 4 TORAJA UTARA)</h6>
     </div>
 
     <!-- Kanan: Deskripsi sekolah -->
@@ -89,7 +99,6 @@
     </div>
   </div>
 </section>
-
   
    <!-- GALERI FOTO KEGIATAN -->
 <section class="galeri-kegiatan" id="foto">
@@ -98,27 +107,27 @@
 
   <div class="galeri-container">
     <div class="kegiatan-item">
-      <img src="" alt="PORSENI">
+      <img src="img/KEGIATAN/PORSENI.jpg" alt="PORSENI">
       <h4>Pekan Olahraga dan Seni (PORSENI) - 15-19 Desember 2024</h4>
       <p>Menampilkan bakat siswa dalam Bidang Seni, Olahraga, Tari dan lainnya</p>
     </div>
     <div class="kegiatan-item">
-      <img src="" alt="Bakti Sosial">
-      <h4>Literasi Kitab Suci</h4>
+      <img src="img/KEGIATAN/foto ibadah.jpg" alt="Ibadah">
+      <h4>Ibadah Akhir Pekan</h4>
       <p>Kegiatan ini diharapkan mampu memahami, menafsirkan, dan mengamalkan ajaran yang terkandung dalam kitab suci secara lebih mendalam dan bertanggung jawab.</p>
     </div>
     <div class="kegiatan-item">
-      <img src="" alt="Upacara">
+      <img src="img/KEGIATAN/upacara1.jpg" alt="Upacara">
       <h4> Upacara Bendera - Setiap Hari Senin</h4>
-      <p>.</p>
+      <p>Upacara bendera dilaksanakan setiap Senin untuk menumbuhkan nasionalisme, disiplin, dan kebersamaan di lingkungan sekolah.</p>
     </div>
     <div class="kegiatan-item">
-      <img src="" alt="jumat bersih">
+      <img src="img/KEGIATAN/JUMAT BERSIH.jpg" alt="jumat bersih">
       <h4> Jumat Bersih - Setiap Hari Jumat</h4>
-      <p>.</p>
+      <p>Jumat Bersih adalah kegiatan rutin setiap hari Jumat yang bertujuan menjaga kebersihan dan kerapihan lingkungan. Dengan semangat gotong royong, seluruh warga bersama-sama menciptakan suasana yang sehat, nyaman, dan asri."</p>
     </div>
     <div class="kegiatan-item">
-      <img src="" alt="tanam pohon">
+      <img src="img/KEGIATAN/Penanaman pohon.jpg" alt="tanam pohon">
       <h4> Penanaman pohon - 25 April 2025</h4>
       <p>Dalam rangka memperingati Hari Bumi 22 April 2025, SMAN 4 Toraja Utara mengadakan kegiatan penanaman pohon untuk meningkatkan kesadaran lingkungan di kalangan siswa. Melalui aksi ini, diharapkan tercipta rasa cinta dan tanggung jawab terhadap kelestarian alam.</p>
     </div>
@@ -148,7 +157,7 @@
       <p>Laboratorium komputer merupakan salah satu fasilitas penting dalam mendukung pembelajaran berbasis teknologi. Dilengkapi dengan perangkat komputer yang memadai dan akses internet, laboratorium ini digunakan untuk kegiatan praktikum, pembelajaran teknologi informasi, serta pengembangan keterampilan digital siswa. Lingkungan yang nyaman dan tertata rapi memberikan pengalaman belajar yang optimal bagi seluruh peserta didik.</p>
     </div>
     <div class="fasilitas-item">
-      <img src="img/SARANA DAN PRASARANA/" alt="Ruang Seni">
+      <img src="img/SARANA DAN PRASARANA/ruang seni.jpg" alt="Ruang Seni">
       <h4>Ruang Seni</h4>
       <p>Ruang seni menjadi wadah bagi siswa untuk mengekspresikan kreativitas dan mengembangkan bakat di bidang seni rupa, musik, dan keterampilan lainnya. Dilengkapi dengan berbagai peralatan penunjang, ruang ini dirancang untuk menciptakan suasana yang inspiratif dan mendukung proses belajar yang menyenangkan. Melalui ruang seni, siswa didorong untuk lebih mengenal, mengapresiasi, dan menghasilkan karya-karya seni yang bernilai</p>
     </div>
@@ -179,11 +188,17 @@
       </p>
     </div>
     <div class="fasilitas-item">
-      <img src="img/SARANA DAN PRASARANA/" alt="LAB IPA">
+      <img src="img/SARANA DAN PRASARANA/LAB IPA.jpg" alt="LAB IPA">
       <h4>Laboratorium IPA</h4>
       <p>Laboratorium IPA adalah fasilitas yang digunakan untuk mendukung kegiatan pembelajaran Ilmu Pengetahuan Alam, seperti fisika, kimia, dan biologi. Laboratorium ini dilengkapi dengan peralatan dan bahan yang memungkinkan siswa melakukan eksperimen, observasi, dan praktik ilmiah secara langsung. Tujuannya adalah untuk meningkatkan pemahaman konsep-konsep IPA melalui pengalaman nyata dan menumbuhkan sikap ilmiah serta keterampilan berpikir kritis.
       </p>
     </div>
+    <div class="fasilitas-item">
+      <img src="img/SARANA DAN PRASARANA/aula.jpg" alt="aula">
+      <h4>Aula</h4>
+      <p>Aula adalah fasilitas yang di sediakan SMAN 4 Toraja Utara untuk mendukung kegiatan pertemuan , dilengkapi dengan SMART BOARD TV dan Sound yang mendukung jalan nya pertemuan </p>
+    </div>
+    
 
   </div>
 </section>
@@ -226,7 +241,7 @@
       <p>TAKRAW</p>
     </div>
     <div class="ekskul-card" onclick="showInfo('TAKRAW')">
-      <img src="" alt="Marching band ">
+      <img src="img/foto eskul/merching band.png" alt="Marching band ">
       <p>Marching band</p>
     </div>
   </div>
@@ -240,7 +255,7 @@
   <p >(Klik Nama lomba untuk melihat informasi prestasi) </p>
   <div class="prestasi-container">
     <div class="prestasi-card" onclick="showPrestasi('Juara 1 dan Juara 3 Lomba Cerdas Cermat')">
-      <img src="img/PRESTASI/foto lcc.jpg" alt="LCC">
+      <img src="img/PRESTASI/cerdas cermat 1.jpg" alt="LCC">
       <h4>Cerdas Cermat</h4>
       <p>Memperingati Hari Ulang Tahun Pahlawan Pontku Tingkat Kabupaten, 2024</p>
     </div>
@@ -255,7 +270,7 @@
       <p>Turnamen Futsal Tingkat Kabupaten, 2024</p>
     </div>
     <div class="prestasi-card" onclick="showPrestasi('Juara 6 Lomba gerak jalan putra')">
-      <img src="img/PRESTASI/foto gerak jalan.jpeg" alt="gerak jalan">
+      <img src="img/PRESTASI/gerak jalan 1.jpg" alt="gerak jalan">
       <h4> Gerak jalan indah</h4>
       <p>dalam rangka memperingati hari kemerdekaan Indonesia, 2024</p>
     </div>
@@ -342,29 +357,15 @@
 
 
 
-  
 
 
   
 
 
+  
 
 
 
-
-
-
-   
-
-
-
-
-
-
-
-
-
- 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
   </body>
 </html>

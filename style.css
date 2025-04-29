@@ -9,12 +9,21 @@ body {
   background-color: #9a9a9a;
 }
 
+
+
 /* navbar */
 nav {
   background-color: white;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000; 
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* efek bayangan bawah */
 }
 
 nav ul {
@@ -29,6 +38,8 @@ nav div img {
 }
 
 nav ul li a {
+  flex-direction: column;
+  width: 100%;
   text-decoration: none;
   font-family: "Segoe UI", sans-serif;
   color: #191919;
@@ -43,6 +54,25 @@ nav ul li a:hover {
   color: rgb(8, 10, 128);
   border-bottom: 1px solid rgb(24, 7, 119);
 }
+
+
+/* Hamburger menu */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #191919;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* JUMBOTRON */
 
@@ -105,6 +135,12 @@ h3 {
   }
 
   /* VISI MISI sekolah */
+  
+  .visi-misi-section .right-content p,
+  .visi-misi-section .right-content li {
+    text-align: justify;
+  }
+
 .visi-misi-section {
   padding: 60px 0;
   background-color: white;
@@ -176,16 +212,14 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  align-items: flex-start;
+  align-items: center; /* ubah dari flex-start ke center supaya gambar & teks rata tengah */
   padding: 40px 20px;
 }
 
 .profil-img-kolom {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
   flex: 1;
-  min-width: 280px;
+  min-width: 300px;
+  text-align: center; /* Biar nama kepala sekolah center */
 }
 
 .profil-img-kolom img {
@@ -206,6 +240,9 @@ h3 {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
+
+
+
 /* Galeri Kegiatan */
 .galeri-kegiatan {
   background-color: #fff7e6;
@@ -260,6 +297,7 @@ h3 {
 .kegiatan-item p {
   font-size: 14px;
   color: #555;
+  text-align: justify;
 }
 .lightbox-overlay {
   position: fixed;
@@ -277,6 +315,10 @@ h3 {
   max-width: 90%;
   max-height: 90%;
   border-radius: 8px;
+}
+
+.responsive {
+  display: table-row
 }
 
 
@@ -334,6 +376,7 @@ h3 {
 .fasilitas-sekolah .fasilitas-item p {
   font-size: 14px;
   color: #555;
+  text-align: justify;
 }
 
 
