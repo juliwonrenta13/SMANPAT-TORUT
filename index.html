@@ -1,370 +1,592 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SMAN 4 TORAJA UTARA</title>
-   <link rel="stylesheet" href="style.css">
-   
-   
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">>
-   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
-
-
-   <script src="script.js"></script>
-    
-  <!-- FONTAWESOME -->
-  <script src="https://kit.fontawesome.com/43625f5228.js" crossorigin="anonymous"></script>
-  
-
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMAN 4 TORAJA UTARA</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="android-chrome-192x192.png" type="image/x-icon">
+  <!-- Font Awesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- AOS Ay -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-  <body>
-<div class="container"></div>
-<!-- navbar -->
-<nav>
-    <div class="logo">  
-      <img src="img/LOGO SEKOLAH.jpg" alt="logo" width="10" />
-      <span class="logo-text">SMAN 4 TORAJA UTARA</span>
-    </div>
-    </div>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <img src="img/LOGO SEKOLAH.jpg" alt="Logo Sekolah">
+        <span class="logo-text">SMAN 4 TORAJA UTARA</span>
+      </div>
 
-    <ul id="nav-links">
-      <li><a href="#depan" id="beranda">Beranda</a></li>
-      <li><a href="#dataprofil" id="profil">Profil</a></li>
-      <li><a href="#ekskul" id="eskul">Ekstrakurikuler</a></li>
-      <li><a href="#foto" id="galeri">Galery</a></li>
-      <li><a href="#sarpras" id="fasilitas">Fasilitas</a></li>
-      <li><a href="#juara" id="prestasi">Prestasi</a></li>
-      <li><a href="#kontak" id="kontaK">Kontak</a></li>
-    </ul>
-   
+      <!-- Desktop Menu -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#beranda" class="active"><i class="fas fa-home"></i> Beranda</a></li>
+        <li><a href="#dataprofil"><i class="fas fa-users"></i> Profil</a></li>
+        <li><a href="#ekskul"><i class="fas fa-running"></i> Ekstrakurikuler</a></li>
+        <li><a href="#foto"><i class="fas fa-images"></i> Galeri</a></li>
+        <li><a href="#sarpras"><i class="fas fa-building"></i> Fasilitas</a></li>
+        <li><a href="#juara"><i class="fas fa-trophy"></i> Prestasi</a></li>
+        <li><a href="#kontak"><i class="fas fa-envelope"></i> Kontak</a></li>
+      </ul>
 
+      <!-- Mobile Menu Button -->
+      <div class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
   </nav>
- 
-  
 
-
-
-
- 
-   <!-- jumbotron/banner -->
-   <div class="container-fluid banner" >
+  <!-- Banner/Jumbotron -->
+  <section id="beranda" class="banner">
     <div class="overlay"></div>
-    <div class="container text-center banner-text">
-      <h4 class="display-6" id="depan"><strong>Selamat Datang di Website</strong></h4>
-      <h3 class="display-1">SMAN 4 TORAJA UTARA</h3>
-    </div>
-  </div>
-  <!-- VISI MISI -->
-  <section class="visi-misi-section" id="visimisi">
-    <div class="container d-flex align-items-center">
-      <div class="left-title">
-        <h2>Visi dan<br>Misi<br>Sekolah.</h2>
-      </div>
-      <div class="vr mx-4"></div>
-      <div class="right-content">
-        <h3>Visi</h3>
-        <p>“Terwujudnya Insan yang BerIman, Cerdas, Kolaboratif, berwawasan IPTEK, Berbasis Kearifan Lokal yang Berdaya Guna”</p>
-        <h3>Misi</h3>
-        <ul>
-          <li>Menanamkan dan menumbuhkembangkan nilai-nilai moral, Etika dan keimanan dari ajaran agama yang dianut melalui  pembinaan karakter dan budi pekerti bagi seluruh warga sekolah.</li>
-          <li>Melaksanakan Kegiatan Pembelajaran yang kondusif, dinamis, dan inovatif dan mengajarkan kemampuan kolaborasi, komunikasi, berpikir kritis dan kreatif  ditunjang    oleh sarana prasarana yang memadai.</li>
-          <li>Mengoptimalkan keikutsertaan warga sekolah dalam lomba-lomba atau diklat bidang IPTEK, seni budaya, dan olahraga, ke tingkat yang lebih tinggi.  </li>
-          <li>Melaksanakan kegiatan pembinaan dan layanan sesuai minat serta bakat  peserta didik.untuk mampu bersaing dengan sekolah lain.</li>
-          <li>Menjalin hubungan antarwarga dan lingkungan sekolah yang harmonis, demokratis, humanis dan berpikir positif dalam peningkatan manajemen sumber daya manusia.</li>
-          <li>Meningkatkan kepedulian dan kecintaan warga sekolah terhadap lingkungan hidup serta melindungi keanekaragaman hayati di lingkungan sekitar dengan menjunjung tinggi nilai-nilai kearifan lokal.</li>
-        </ul>
+    <div class="container banner-content">
+      <h4 data-aos="fade-up" data-aos-delay="200">Selamat Datang di Website</h4>
+      <h3 data-aos="fade-up" data-aos-delay="400">SMAN 4 TORAJA UTARA</h3>
+      <div data-aos="fade-up" data-aos-delay="600">
+        <button class="btn btn-primary" onclick="scrollToSection('dataprofil')">See More</button>
       </div>
     </div>
   </section>
 
+  <!-- Visi Misi -->
+  <section id="visimisi" class="visi-misi">
+    <div class="container">
+      <div class="visi-misi-content">
+        <div class="left-title" data-aos="fade-right">
+          <h2>Visi dan<br>Misi<br>Sekolah.</h2>
+        </div>
 
-<!-- Profil -->
-<section class="profil-sekolah" id="dataprofil">
-  <h3 class="judul-profil">Profil </h3>
-  <h2 class="subjudul-profil1">Profil Sekolah</h2>
-  <div class="profil-container">
-    <!-- Kiri: Foto kepala sekolah -->
-    <div class="profil-img-kolom">
-      <img src="img/Foto Kepsek.jpeg" alt="Foto Kepsek">
-      <h5>Riandoyo, S.Pd, M.Pd</h5>
-      <h6>(Kepala UPT SMAN 4 TORAJA UTARA)</h6>
-    </div>
+        <div class="divider"></div>
 
-    <!-- Kanan: Deskripsi sekolah -->
-    <div class="profil-deskripsi">
-      <p>SMA Negeri 4 Toraja Utara merupakan salah satu lembaga pendidikan menengah atas yang terletak di Jl. Praya Limbong, Pangala' Utara, Kabupaten Toraja Utara, Provinsi Sulawesi Selatan. Sekolah ini didirikan pada tanggal 5 Mei 1992 dan berdiri di atas lahan seluas 11.300 m². Saat ini, SMAN 4 Toraja Utara memiliki 527 siswa yang dibimbing oleh 56 orang guru dan tenaga kependidikan yang berdedikasi tinggi. Di bawah kepemimpinan Bapak Riandoyo, S.Pd., M.Pd. selaku kepala sekolah, SMAN 4 Toraja Utara terus berkomitmen untuk menciptakan lingkungan belajar yang kondusif, berkualitas, dan berkarakter, guna mencetak generasi muda yang berprestasi dan siap bersaing di era global.</p>
-    </div>
-  </div>
-</section>
-  
-   <!-- GALERI FOTO KEGIATAN -->
-<section class="galeri-kegiatan" id="foto">
-  <h3 class="judul-galeri">GALERY</h3>
-  <h2 class="subjudul-galeri">Foto-foto Kegiatan</h2>
+        <div class="right-content" data-aos="fade-left">
+          <h3>Visi</h3>
+          <p>"Terwujudnya Insan yang BerIman, Cerdas, Kolaboratif, berwawasan IPTEK, Berbasis Kearifan Lokal yang Berdaya Guna"</p>
 
-  <div class="galeri-container">
-    <div class="kegiatan-item">
-      <img src="img/KEGIATAN/PORSENI.jpg" alt="PORSENI">
-      <h4>Pekan Olahraga dan Seni (PORSENI) - 15-19 Desember 2024</h4>
-      <p>Menampilkan bakat siswa dalam Bidang Seni, Olahraga, Tari dan lainnya</p>
-    </div>
-    <div class="kegiatan-item">
-      <img src="img/KEGIATAN/foto ibadah.jpg" alt="Ibadah">
-      <h4>Ibadah Akhir Pekan</h4>
-      <p>Kegiatan ini diharapkan mampu memahami, menafsirkan, dan mengamalkan ajaran yang terkandung dalam kitab suci secara lebih mendalam dan bertanggung jawab.</p>
-    </div>
-    <div class="kegiatan-item">
-      <img src="img/KEGIATAN/upacara1.jpg" alt="Upacara">
-      <h4> Upacara Bendera - Setiap Hari Senin</h4>
-      <p>Upacara bendera dilaksanakan setiap Senin untuk menumbuhkan nasionalisme, disiplin, dan kebersamaan di lingkungan sekolah.</p>
-    </div>
-    <div class="kegiatan-item">
-      <img src="img/KEGIATAN/JUMAT BERSIH.jpg" alt="jumat bersih">
-      <h4> Jumat Bersih - Setiap Hari Jumat</h4>
-      <p>Jumat Bersih adalah kegiatan rutin setiap hari Jumat yang bertujuan menjaga kebersihan dan kerapihan lingkungan. Dengan semangat gotong royong, seluruh warga bersama-sama menciptakan suasana yang sehat, nyaman, dan asri."</p>
-    </div>
-    <div class="kegiatan-item">
-      <img src="img/KEGIATAN/Penanaman pohon.jpg" alt="tanam pohon">
-      <h4> Penanaman pohon - 25 April 2025</h4>
-      <p>Dalam rangka memperingati Hari Bumi 22 April 2025, SMAN 4 Toraja Utara mengadakan kegiatan penanaman pohon untuk meningkatkan kesadaran lingkungan di kalangan siswa. Melalui aksi ini, diharapkan tercipta rasa cinta dan tanggung jawab terhadap kelestarian alam.</p>
-    </div>
-    
-    
-  </div>
-</section>
-    
-
-
-<!-- FASILITAS SEKOLAH -->
-<section class="fasilitas-sekolah" id="sarpras">
-  <h3 class="judul-fasilitas">FASILITAS</h3>
-  <h2 class="subjudul-fasilitas">Sarana & Prasarana</h2>
-
-  <div class="container">
-    <div class="fasilitas-item">
-      <img src="img/SARANA DAN PRASARANA/PERPUSTAKAN.jpg" alt="Perpustakaan">
-      <h4>Perpustakaan</h4>
-      <p>Perpustakaan sekolah adalah pusat sumber belajar yang menyediakan berbagai koleksi buku, majalah, dan bahan bacaan lainnya. Ruang ini mendukung minat baca siswa dan menjadi tempat yang tenang untuk belajar, mencari referensi, serta mengembangkan wawasan.
-
-      </p>
-    </div>
-    <div class="fasilitas-item">
-      <img src="img/SARANA DAN PRASARANA/lab komputer.jpg" alt="Lab Komputer">
-      <h4>Laboratorium Komputer</h4>
-      <p>Laboratorium komputer merupakan salah satu fasilitas penting dalam mendukung pembelajaran berbasis teknologi. Dilengkapi dengan perangkat komputer yang memadai dan akses internet, laboratorium ini digunakan untuk kegiatan praktikum, pembelajaran teknologi informasi, serta pengembangan keterampilan digital siswa. Lingkungan yang nyaman dan tertata rapi memberikan pengalaman belajar yang optimal bagi seluruh peserta didik.</p>
-    </div>
-    <div class="fasilitas-item">
-      <img src="img/SARANA DAN PRASARANA/ruang seni.jpg" alt="Ruang Seni">
-      <h4>Ruang Seni</h4>
-      <p>Ruang seni menjadi wadah bagi siswa untuk mengekspresikan kreativitas dan mengembangkan bakat di bidang seni rupa, musik, dan keterampilan lainnya. Dilengkapi dengan berbagai peralatan penunjang, ruang ini dirancang untuk menciptakan suasana yang inspiratif dan mendukung proses belajar yang menyenangkan. Melalui ruang seni, siswa didorong untuk lebih mengenal, mengapresiasi, dan menghasilkan karya-karya seni yang bernilai</p>
-    </div>
-    <div class="fasilitas-item">
-      <img src="img/SARANA DAN PRASARANA/ASRAMA PUTRI.jpg" alt="ASRAMA PUTRI">
-      <h4>ASRAMA  PUTRI</h4>
-      <p>Asrama putri merupakan fasilitas tempat tinggal bagi siswi yang bersekolah jauh dari rumah. Lingkungan asrama didesain nyaman, aman, dan mendukung kedisiplinan serta pembentukan karakter. Di dalamnya tersedia kamar tidur, ruang belajar, serta fasilitas penunjang kegiatan harian.</p>
-    </div>
-    <div class="fasilitas-item">
-      <img src="img/SARANA DAN PRASARANA/SMART TV.jpg" alt="smart TV">
-      <h4>SMART TV</h4>
-      <p>Smart TV digunakan sebagai media pembelajaran interaktif di ruang kelas. Dengan koneksi internet dan fitur multimedia, Smart TV membantu guru menyajikan materi secara visual dan menarik, sehingga proses belajar menjadi lebih modern, efektif, dan menyenangkan.</p>
-    </div>
-    <div class="fasilitas-item">
-      <img src="img/SARANA DAN PRASARANA/UKS.jpeg" alt="UKS">
-      <h4>UKS</h4>
-      <p>Ruang UKS adalah fasilitas di sekolah yang disediakan untuk mendukung pelayanan kesehatan bagi siswa, guru, dan seluruh warga sekolah. Di dalamnya tersedia perlengkapan dasar untuk pertolongan pertama, tempat istirahat bagi siswa yang kurang sehat, </p>
-    </div>
-    <div class="fasilitas-item">
-      <img src="img/SARANA DAN PRASARANA/RUANG KELAS.jpg" alt="Ruang kelas">
-      <h4>Ruang Teori belajar</h4>
-      <p> Ruang kelas adalah tempat utama kegiatan belajar mengajar berlangsung. Didesain untuk menciptakan suasana belajar yang nyaman dan kondusif, ruang ini dilengkapi dengan meja, kursi, papan tulis, serta fasilitas penunjang lainnya demi mendukung proses pembelajaran yang efektif. Di SMAN 4 TORAJA UTARA terdiri dari 16 ruang kelas yang di gunakan dalam proses kegiatan belajar mengajar</p>
-    </div>
-    <div class="fasilitas-item">
-      <img src="img/SARANA DAN PRASARANA/PARKIRAN (2).jpg" alt="PARKIRAN">
-      <h4>PARKIRAN</h4>
-      <p>Area parkir sekolah disediakan untuk kendaraan siswa, guru, dan staf. Lokasinya tertata rapi dan aman, sehingga mendukung kelancaran aktivitas harian di lingkungan sekolah.
-      </p>
-    </div>
-    <div class="fasilitas-item">
-      <img src="img/SARANA DAN PRASARANA/LAB IPA.jpg" alt="LAB IPA">
-      <h4>Laboratorium IPA</h4>
-      <p>Laboratorium IPA adalah fasilitas yang digunakan untuk mendukung kegiatan pembelajaran Ilmu Pengetahuan Alam, seperti fisika, kimia, dan biologi. Laboratorium ini dilengkapi dengan peralatan dan bahan yang memungkinkan siswa melakukan eksperimen, observasi, dan praktik ilmiah secara langsung. Tujuannya adalah untuk meningkatkan pemahaman konsep-konsep IPA melalui pengalaman nyata dan menumbuhkan sikap ilmiah serta keterampilan berpikir kritis.
-      </p>
-    </div>
-    <div class="fasilitas-item">
-      <img src="img/SARANA DAN PRASARANA/aula.jpg" alt="aula">
-      <h4>Aula</h4>
-      <p>Aula adalah fasilitas yang di sediakan SMAN 4 Toraja Utara untuk mendukung kegiatan pertemuan , dilengkapi dengan SMART BOARD TV dan Sound yang mendukung jalan nya pertemuan </p>
-    </div>
-    
-
-  </div>
-</section>
-    
-<!-- EKSTRAKURIKULER -->
-<section class="ekskul-section" id="ekskul">
-  <h3 class="judul-ekskul">EKSTRAKURIKULER</h3>
-  <h2 class="subjudul-ekskul">Pilihan Kegiatan Ekstrakurikuler</h2>
-  <div class="ekskul-container">
-    <div class="ekskul-card" onclick="showInfo('OSIS')">
-      <img src="img/FOTO OSIS.jpeg" alt="osis">
-      <p>OSIS</p>
-    </div>
-    <div class="ekskul-card" onclick="showInfo('SISPALA')">
-      <img src="img/FOTO SISPALA.jpeg" alt="sispala">
-      <p>SISPALA</p>
-    </div>
-    <div class="ekskul-card" onclick="showInfo('PASKIBRA')">
-      <img src="img/FOTO PASKIBRA.jpeg" alt="foto PASKIBRA" >
-      <p>PASKIBRA</p>
-    </div>
-    <div class="ekskul-card" onclick="showInfo('Futsal')">
-      <img src="img/foto eskul/foto eskul futsal.jpeg" alt="Futsal">
-      <p>FUTSAL</p>
-    </div>
-    <div class="ekskul-card" onclick="showInfo('PMR')">
-      <img src="img/foto pmr.jpg" alt="PMR">
-      <p>Palang Merah Remaja (PMR)</p>
-    </div>
-    <div class="ekskul-card" onclick="showInfo('VOLY')">
-      <img src="img/foto eskul/foto voly.jpeg" alt="VOLY">
-      <p>VOLY</p>
-    </div>
-    <div class="ekskul-card" onclick="showInfo('KESENIAN')">
-      <img src="img/FOTO KESENIAN.jpg" alt="KESENIAN">
-      <p>KESENIAN</p>
-    </div>
-    <div class="ekskul-card" onclick="showInfo('TAKRAW')">
-      <img src="img/foto eskul/ESKUL TAKRAW.jpeg" alt="TAKRAW">
-      <p>TAKRAW</p>
-    </div>
-    <div class="ekskul-card" onclick="showInfo('TAKRAW')">
-      <img src="img/foto eskul/merching band.png" alt="Marching band ">
-      <p>Marching band</p>
-    </div>
-  </div>
-</section>
-
-
-<!-- DAFTAR PRESTASI -->
-<section class="prestasi-section" id="juara">
-  <h3 class="judul-prestasi">PRESTASI</h3>
-  <h2 class="subjudul-prestasi">Daftar Prestasi Siswa</h2>
-  <p >(Klik Nama lomba untuk melihat informasi prestasi) </p>
-  <div class="prestasi-container">
-    <div class="prestasi-card" onclick="showPrestasi('Juara 1 dan Juara 3 Lomba Cerdas Cermat')">
-      <img src="img/PRESTASI/cerdas cermat 1.jpg" alt="LCC">
-      <h4>Cerdas Cermat</h4>
-      <p>Memperingati Hari Ulang Tahun Pahlawan Pontku Tingkat Kabupaten, 2024</p>
-    </div>
-    <div class="prestasi-card" onclick="showPrestasi('Juara 2 putra dan Juara 3 Lomba Napak Tilas')">
-      <img src="img/PRESTASI/napak tilas.jpeg" alt="napak tilas">
-      <h4>Napak Tilas</h4>
-      <p>Lomba Napak Tilas dalam rangka memperingati Hari Ulang Tahun Pahlawan Pongtiku Tingkat Kabupaten 2024</p>
-    </div>
-    <div class="prestasi-card" onclick="showPrestasi('Juara 3 Turnamen Futsal')">
-      <img src="img/PRESTASI/FUTSAL.jpeg" alt="FUTSAL">
-      <h4> Futsal </h4>
-      <p>Turnamen Futsal Tingkat Kabupaten, 2024</p>
-    </div>
-    <div class="prestasi-card" onclick="showPrestasi('Juara 6 Lomba gerak jalan putra')">
-      <img src="img/PRESTASI/gerak jalan 1.jpg" alt="gerak jalan">
-      <h4> Gerak jalan indah</h4>
-      <p>dalam rangka memperingati hari kemerdekaan Indonesia, 2024</p>
+          <h3>Misi</h3>
+          <ul>
+            <li>
+              <span class="bullet"></span>
+              <span>Menanamkan dan menumbuhkembangkan nilai-nilai moral, Etika dan keimanan dari ajaran agama yang dianut melalui pembinaan karakter dan budi pekerti bagi seluruh warga sekolah.</span>
+            </li>
+            <li>
+              <span class="bullet"></span>
+              <span>Melaksanakan Kegiatan Pembelajaran yang kondusif, dinamis, dan inovatif dan mengajarkan kemampuan kolaborasi, komunikasi, berpikir kritis dan kreatif ditunjang oleh sarana prasarana yang memadai.</span>
+            </li>
+            <li>
+              <span class="bullet"></span>
+              <span>Mengoptimalkan keikutsertaan warga sekolah dalam lomba-lomba atau diklat bidang IPTEK, seni budaya, dan olahraga, ke tingkat yang lebih tinggi.</span>
+            </li>
+            <li>
+              <span class="bullet"></span>
+              <span>Melaksanakan kegiatan pembinaan dan layanan sesuai minat serta bakat peserta didik untuk mampu bersaing dengan sekolah lain.</span>
+            </li>
+            <li>
+              <span class="bullet"></span>
+              <span>Menjalin hubungan antarwarga dan lingkungan sekolah yang harmonis, demokratis, humanis dan berpikir positif dalam peningkatan manajemen sumber daya manusia.</span>
+            </li>
+            <li>
+              <span class="bullet"></span>
+              <span>Meningkatkan kepedulian dan kecintaan warga sekolah terhadap lingkungan hidup serta melindungi keanekaragaman hayati di lingkungan sekitar dengan menjunjung tinggi nilai-nilai kearifan lokal.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
-<!-- PRESTASI SNBP -->
-<section class="snbp-section" id="snbp">
-  <h3 class="judul-snbp">PRESTASI KHUSUS</h3>
-  <h2 class="subjudul-snbp">SNBP 2025</h2>
-  <div class="snbp-container">
-    <img src="img/PRESTASI/SNBP.jpg" alt="SNBP" class="snbp-img">
-    <div class="snbp-deskripsi">
-      <h4>Siswa Lolos Seleksi Nasional Berdasarkan Prestasi</h4>
-      <p>Beberapa siswa SMAN 4 Toraja Utara berhasil lolos ke Perguruan Tinggi Negeri (PTN) favorit melalui jalur prestasi SNBP 2024. Ini adalah bukti nyata dedikasi siswa dan bimbingan guru yang luar biasa.</p>
-    </div>
-  </div>
-</section>
+  <!-- Profil -->
+  <section id="dataprofil" class="profil">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="subtitle" data-aos="fade-up">Profil</span>
+        <h2 data-aos="fade-up" data-aos-delay="100">Profil Sekolah</h2>
+      </div>
 
-<!-- KONTAK SEKOLAH -->
-<section class="kontak-section" id="kontak">
-  <h3 class="judul-kontak">KONTAK</h3>
-  <h2 class="subjudul-kontak">Informasi Kontak</h2>
-  <div class="kontak-container">
-    <div class="kontak-info">
-      <p>📍 Alamat: Jl. Praya Limbong, Pangala' Utara, Toraja Utara, Sulawesi Selatan</p>
-      <p>📞 Telepon: 08124112240</p>
-      <p>📧 Email: sman4torajautara@gmail.com</p>
-    </div>
-    <div class="sosmed">
-      <h4>Media Sosial</h4>
-      <a href="https://facebook.com/sman4torajautara" target="_blank"><i class="fa-brands fa-facebook"></i> SMAN 4 TORAJA UTARA</a><br>
-      <a href="https://www.instagram.com/smanegeri4torajautara/" target="_blank"><i class="fa-brands fa-instagram"></i> @smanegeri4torajautara</a><br>
-      <a href="https://www.tiktok.com/@sman.4.toraja.utara" target="_blank"><i class="fa-brands fa-tiktok"></i> SMAN 4 TORAJA UTARA</a>
-    </div>
+      <div class="profil-content">
+        <div class="profil-image" data-aos="fade-right">
+          <div class="image-container">
+            <img src="img/Foto Kepsek.jpeg" alt="Foto Kepala Sekolah">
+            <div class="image-overlay"></div>
+          </div>
+          <h5>Riandoyo, S.Pd, M.Pd</h5>
+          <h6>(Kepala UPT SMAN 4 TORAJA UTARA)</h6>
+        </div>
 
-    <div class="map-container">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d800.3152355310183!2d119.80987786949223!3d-2.898582160427943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d93c0b547e6a52d%3A0xe1bcb79a78eb9e0d!2sSMA%20Negeri%204%20Toraja%20Utara!5e1!3m2!1sid!2sid!4v1745746985043!5m2!1sid!2sid" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-  </div>
-
-  <!-- Hubungi Kami form -->
-  <div class="hubungi-container">
-    <h2>Hubungi Kami</h2>
-    <form id="formHubungi" onsubmit="kirimPesan(event)">
-      <input type="text" id="nama" placeholder="Nama Anda" required>
-      <input type="email" id="email" placeholder="Email Anda" required>
-      <textarea id="pesan" rows="5" placeholder="Pesan Anda" required></textarea>
-      <button type="submit">Kirim</button>
-    </form>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer-grid">
-  <div class="footer-grid-container">
-    <div class="footer-brand">
-      <h2>SMAN 4 TORAJA UTARA</h2>
-      <p>Jl. Praya Limbong, Pangala' Utara, Toraja Utara, Sulawesi Selatan</p>
-    </div>
-
-    <div class="footer-links">
-      <h3>Follow Us</h3>
-      <div class="social-icons">
-        <a href="https://facebook.com/sman4torajautara" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/smanegeri4torajautara/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.tiktok.com/@sman.4.toraja.utara" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <div class="profil-text" data-aos="fade-left">
+          <div class="card">
+            <p>SMA Negeri 4 Toraja Utara merupakan salah satu lembaga pendidikan menengah atas yang terletak di Jl. Praya Limbong, Pangala' Utara, Kabupaten Toraja Utara, Provinsi Sulawesi Selatan. Sekolah ini didirikan pada tanggal 5 Mei 1992 dan berdiri di atas lahan seluas 11.300 m². Saat ini, SMAN 4 Toraja Utara memiliki 527 siswa yang dibimbing oleh 56 orang guru dan tenaga kependidikan yang berdedikasi tinggi. Di bawah kepemimpinan Bapak Riandoyo, S.Pd., M.Pd. selaku kepala sekolah, SMAN 4 Toraja Utara terus berkomitmen untuk menciptakan lingkungan belajar yang kondusif, berkualitas, dan berkarakter, guna mencetak generasi muda yang berprestasi dan siap bersaing di era global.</p>
+          </div>
+        </div>
       </div>
     </div>
-    
-    <div class="footer-contact">
-      <h3>Hubungi Kami</h3>
-      <p>Telepon:08124112240</p>
-      <p>Email: sman4torajautara@gmail.com</p>
+  </section>
+
+  <!-- Galeri Kegiatan -->
+  <section id="foto" class="galeri">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="subtitle" data-aos="fade-up">Galeri</span>
+        <h2 data-aos="fade-up" data-aos-delay="100">Foto-foto Kegiatan</h2>
+      </div>
+
+      <div class="galeri-grid">
+        <div class="galeri-item" data-aos="fade-up">
+          <div class="galeri-image" onclick="openLightbox('img/FOTO PORSENI.jpeg')">
+            <img src="img/FOTO PORSENI.jpeg" alt="PORSENI">
+            <div class="image-overlay">
+              <span>Lihat Foto</span>
+            </div>
+          </div>
+          <div class="galeri-content">
+            <h4>Pekan Olahraga dan Seni (PORSENI) - 15-19 Desember 2024</h4>
+            <p>Menampilkan bakat siswa dalam Bidang Seni, Olahraga, Tari dan lainnya</p>
+          </div>
+        </div>
+
+        <div class="galeri-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="galeri-image" onclick="openLightbox('img/KEGIATAN/foto ibadah.jpg')">
+            <img src="img/KEGIATAN/foto ibadah.jpg" alt="Ibadah">
+            <div class="image-overlay">
+              <span>Lihat Foto</span>
+            </div>
+          </div>
+          <div class="galeri-content">
+            <h4>Ibadah Akhir Pekan</h4>
+            <p>Kegiatan ini diharapkan mampu memahami, menafsirkan, dan mengamalkan ajaran yang terkandung dalam kitab suci secara lebih mendalam dan bertanggung jawab.</p>
+          </div>
+        </div>
+
+        <div class="galeri-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="galeri-image" onclick="openLightbox('img/KEGIATAN/upacara1.jpg')">
+            <img src="img/KEGIATAN/upacara1.jpg" alt="Upacara">
+            <div class="image-overlay">
+              <span>Lihat Foto</span>
+            </div>
+          </div>
+          <div class="galeri-content">
+            <h4>Upacara Bendera - Setiap Hari Senin</h4>
+            <p>Upacara bendera dilaksanakan setiap Senin untuk menumbuhkan nasionalisme, disiplin, dan kebersamaan di lingkungan sekolah.</p>
+          </div>
+        </div>
+
+        <div class="galeri-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="galeri-image" onclick="openLightbox('img/KEGIATAN/JUMAT BERSIH.jpg')">
+            <img src="img/KEGIATAN/JUMAT BERSIH.jpg" alt="Jumat Bersih">
+            <div class="image-overlay">
+              <span>Lihat Foto</span>
+            </div>
+          </div>
+          <div class="galeri-content">
+            <h4>Jumat Bersih - Setiap Hari Jumat</h4>
+            <p>Jumat Bersih adalah kegiatan rutin setiap hari Jumat yang bertujuan menjaga kebersihan dan kerapihan lingkungan. Dengan semangat gotong royong, seluruh warga bersama-sama menciptakan suasana yang sehat, nyaman, dan asri.</p>
+          </div>
+        </div>
+
+        <div class="galeri-item" data-aos="fade-up" data-aos-delay="400">
+          <div class="galeri-image" onclick="openLightbox('img/KEGIATAN/Penanaman pohon.jpg')">
+            <img src="img/KEGIATAN/Penanaman pohon.jpg" alt="Penanaman Pohon">
+            <div class="image-overlay">
+              <span>Lihat Foto</span>
+            </div>
+          </div>
+          <div class="galeri-content">
+            <h4>Penanaman pohon - 25 April 2025</h4>
+            <p>Dalam rangka memperingati Hari Bumi 22 April 2025, SMAN 4 Toraja Utara mengadakan kegiatan penanaman pohon untuk meningkatkan kesadaran lingkungan di kalangan siswa. Melalui aksi ini, diharapkan tercipta rasa cinta dan tanggung jawab terhadap kelestarian alam.</p>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
+
+  <!-- Fasilitas -->
+  <section id="sarpras" class="fasilitas">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="subtitle" data-aos="fade-up">Fasilitas</span>
+        <h2 data-aos="fade-up" data-aos-delay="100">Sarana & Prasarana</h2>
+      </div>
+
+      <div class="fasilitas-grid">
+        <div class="fasilitas-item" data-aos="fade-up">
+          <div class="fasilitas-image" onclick="openLightbox('img/SARANA DAN PRASARANA/PERPUSTAKAN.jpg')">
+            <img src="img/SARANA DAN PRASARANA/PERPUSTAKAN.jpg" alt="Perpustakaan">
+            <div class="image-overlay">
+              <span>Lihat Foto</span>
+            </div>
+          </div>
+          <div class="fasilitas-content">
+            <h4>Perpustakaan</h4>
+            <p>Perpustakaan sekolah adalah pusat sumber belajar yang menyediakan berbagai koleksi buku, majalah, dan bahan bacaan lainnya. Ruang ini mendukung minat baca siswa dan menjadi tempat yang tenang untuk belajar, mencari referensi, serta mengembangkan wawasan.</p>
+          </div>
+        </div>
+
+        <div class="fasilitas-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="fasilitas-image" onclick="openLightbox('img/SARANA DAN PRASARANA/lab komputer.jpg')">
+            <img src="img/SARANA DAN PRASARANA/lab komputer.jpg" alt="Lab Komputer">
+            <div class="image-overlay">
+              <span>Lihat Foto</span>
+            </div>
+          </div>
+          <div class="fasilitas-content">
+            <h4>Laboratorium Komputer</h4>
+            <p>Laboratorium komputer merupakan salah satu fasilitas penting dalam mendukung pembelajaran berbasis teknologi. Dilengkapi dengan perangkat komputer yang memadai dan akses internet, laboratorium ini digunakan untuk kegiatan praktikum, pembelajaran teknologi informasi, serta pengembangan keterampilan digital siswa.</p>
+          </div>
+        </div>
+
+        <div class="fasilitas-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="fasilitas-image" onclick="openLightbox('img/SARANA DAN PRASARANA/ruang seni.jpg')">
+            <img src="img/SARANA DAN PRASARANA/ruang seni.jpg" alt="Ruang Seni">
+            <div class="image-overlay">
+              <span>Lihat Foto</span>
+            </div>
+          </div>
+          <div class="fasilitas-content">
+            <h4>Ruang Seni</h4>
+            <p>Ruang seni menjadi wadah bagi siswa untuk mengekspresikan kreativitas dan mengembangkan bakat di bidang seni rupa, musik, dan keterampilan lainnya. Dilengkapi dengan berbagai peralatan penunjang, ruang ini dirancang untuk menciptakan suasana yang inspiratif.</p>
+          </div>
+        </div>
+
+        <div class="fasilitas-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="fasilitas-image" onclick="openLightbox('img/SARANA DAN PRASARANA/ASRAMA PUTRI.jpg')">
+            <img src="img/SARANA DAN PRASARANA/ASRAMA PUTRI.jpg" alt="Asrama Putri">
+            <div class="image-overlay">
+              <span>Lihat Foto</span>
+            </div>
+          </div>
+          <div class="fasilitas-content">
+            <h4>Asrama Putri</h4>
+            <p>Asrama putri merupakan fasilitas tempat tinggal bagi siswi yang bersekolah jauh dari rumah. Lingkungan asrama didesain nyaman, aman, dan mendukung kedisiplinan serta pembentukan karakter. Di dalamnya tersedia kamar tidur, ruang belajar, serta fasilitas penunjang kegiatan harian.</p>
+          </div>
+        </div>
+
+        <div class="fasilitas-item" data-aos="fade-up" data-aos-delay="400">
+          <div class="fasilitas-image" onclick="openLightbox('img/SARANA DAN PRASARANA/SMART TV.jpg')">
+            <img src="img/SARANA DAN PRASARANA/SMART TV.jpg" alt="Smart TV">
+            <div class="image-overlay">
+              <span>Lihat Foto</span>
+            </div>
+          </div>
+          <div class="fasilitas-content">
+            <h4>Smart TV</h4>
+            <p>Smart TV digunakan sebagai media pembelajaran interaktif di ruang kelas. Dengan koneksi internet dan fitur multimedia, Smart TV membantu guru menyajikan materi secara visual dan menarik, sehingga proses belajar menjadi lebih modern, efektif, dan menyenangkan.</p>
+          </div>
+        </div>
+
+          <div class="fasilitas-item" data-aos="fade-up" data-aos-delay="400">
+          <div class="fasilitas-image" onclick="openLightbox('img/SARANA DAN PRASARANA/aula.jpg')">
+          <img src="img/SARANA DAN PRASARANA/aula.jpg" alt="aula">
+            <div class="image-overlay">
+              <span>Lihat Foto</span>
+            </div>
+          </div>
+          <div class="fasilitas-content">
+            <h4>Aula</h4>
+            <p>Aula adalah fasilitas yang di sediakan SMAN 4 Toraja Utara untuk mendukung kegiatan pertemuan , dilengkapi dengan SMART BOARD TV dan Sound yang mendukung jalan nya pertemuan</p>
+          </div>
+        </div>
+
+        <div class="fasilitas-item" data-aos="fade-up" data-aos-delay="500">
+          <div class="fasilitas-image" onclick="openLightbox('img/SARANA DAN PRASARANA/UKS.jpeg')">
+            <img src="img/SARANA DAN PRASARANA/UKS.jpeg" alt="UKS">
+            <div class="image-overlay">
+              <span>Lihat Foto</span>
+            </div>
+          </div>
+          <div class="fasilitas-content">
+            <h4>UKS</h4>
+            <p>Ruang UKS adalah fasilitas di sekolah yang disediakan untuk mendukung pelayanan kesehatan bagi siswa, guru, dan seluruh warga sekolah. Di dalamnya tersedia perlengkapan dasar untuk pertolongan pertama, tempat istirahat bagi siswa yang kurang sehat.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ekstrakurikuler -->
+  <section id="ekskul" class="ekstrakurikuler">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="subtitle" data-aos="fade-up">Ekstrakurikuler</span>
+        <h2 data-aos="fade-up" data-aos-delay="100">Pilihan Kegiatan Ekstrakurikuler</h2>
+      </div>
+
+      <div class="ekskul-grid">
+        <div class="ekskul-item" data-aos="zoom-in" onclick="showInfo('OSIS')">
+          <div class="ekskul-image">
+            <img src="img/FOTO OSIS.jpeg" alt="OSIS">
+          </div>
+          <p>OSIS</p>
+        </div>
+
+        <div class="ekskul-item" data-aos="zoom-in" data-aos-delay="100" onclick="showInfo('SISPALA')">
+          <div class="ekskul-image">
+            <img src="img/FOTO SISPALA.jpeg" alt="SISPALA">
+          </div>
+          <p>SISPALA</p>
+        </div>
+
+        <div class="ekskul-item" data-aos="zoom-in" data-aos-delay="200" onclick="showInfo('PASKIBRA')">
+          <div class="ekskul-image">
+            <img src="img/FOTO PASKIBRA.jpeg" alt="PASKIBRA">
+          </div>
+          <p>PASKIBRA</p>
+        </div>
+
+        <div class="ekskul-item" data-aos="zoom-in" data-aos-delay="300" onclick="showInfo('FUTSAL')">
+          <div class="ekskul-image">
+            <img src="img/foto eskul/foto eskul futsal.jpeg" alt="FUTSAL">
+          </div>
+          <p>FUTSAL</p>
+        </div>
+
+        <div class="ekskul-item" data-aos="zoom-in" data-aos-delay="400" onclick="showInfo('Palang Merah Remaja (PMR)')">
+          <div class="ekskul-image">
+            <img src="img/foto pmr.jpg" alt="PMR">
+          </div>
+          <p>Palang Merah Remaja (PMR)</p>
+        </div>
+
+        <div class="ekskul-item" data-aos="zoom-in" data-aos-delay="500" onclick="showInfo('VOLY')">
+          <div class="ekskul-image">
+            <img src="img/foto eskul/foto voly.jpeg" alt="VOLY">
+          </div>
+          <p>VOLY</p>
+        </div>
+
+        <div class="ekskul-item" data-aos="zoom-in" data-aos-delay="600" onclick="showInfo('KESENIAN')">
+          <div class="ekskul-image">
+            <img src="img/FOTO KESENIAN.jpg" alt="KESENIAN">
+          </div>
+          <p>KESENIAN</p>
+        </div>
+
+        <div class="ekskul-item" data-aos="zoom-in" data-aos-delay="700" onclick="showInfo('TAKRAW')">
+          <div class="ekskul-image">
+            <img src="img/foto eskul/ESKUL TAKRAW.jpeg" alt="TAKRAW">
+          </div>
+          <p>TAKRAW</p>
+        </div>
+
+        <div class="ekskul-item" data-aos="zoom-in" data-aos-delay="800" onclick="showInfo('Marching band')">
+          <div class="ekskul-image">
+            <img src="img/foto eskul/merching band.png" alt="Marching band">
+          </div>
+          <p>Marching band</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prestasi -->
+  <section id="juara" class="prestasi">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="subtitle" data-aos="fade-up">Prestasi</span>
+        <h2 data-aos="fade-up" data-aos-delay="100">Daftar Prestasi Siswa</h2>
+        <p data-aos="fade-up" data-aos-delay="200">(Klik kartu untuk melihat informasi prestasi)</p>
+      </div>
+
+      <div class="prestasi-grid">
+        <div class="prestasi-item" data-aos="fade-up" onclick="showPrestasi('Juara 1 dan Juara 3 Lomba Cerdas Cermat')">
+          <div class="prestasi-image">
+            <img src="img/PRESTASI/cerdas cermat 1.jpg" alt="Cerdas Cermat">
+            <div class="image-overlay">
+              <span>Klik untuk detail</span>
+            </div>
+          </div>
+          <div class="prestasi-content">
+            <h4>Cerdas Cermat</h4>
+            <p>Memperingati Hari Ulang Tahun Pahlawan Pontku Tingkat Kabupaten, 2024</p>
+          </div>
+        </div>
+
+        <div class="prestasi-item" data-aos="fade-up" data-aos-delay="100" onclick="showPrestasi('Juara 2 putra dan Juara 3 Lomba Napak Tilas')">
+          <div class="prestasi-image">
+            <img src="img/PRESTASI/napak tilas.jpeg" alt="Napak Tilas">
+            <div class="image-overlay">
+              <span>Klik untuk detail</span>
+            </div>
+          </div>
+          <div class="prestasi-content">
+            <h4>Napak Tilas</h4>
+            <p>Lomba Napak Tilas dalam rangka memperingati Hari Ulang Tahun Pahlawan Pongtiku Tingkat Kabupaten 2024</p>
+          </div>
+        </div>
+
+        <div class="prestasi-item" data-aos="fade-up" data-aos-delay="200" onclick="showPrestasi('Juara 3 Turnamen Futsal')">
+          <div class="prestasi-image">
+            <img src="img/PRESTASI/FUTSAL.jpeg" alt="Futsal">
+            <div class="image-overlay">
+              <span>Klik untuk detail</span>
+            </div>
+          </div>
+          <div class="prestasi-content">
+            <h4>Futsal</h4>
+            <p>Turnamen Futsal Tingkat Kabupaten, 2024</p>
+          </div>
+        </div>
+
+        <div class="prestasi-item" data-aos="fade-up" data-aos-delay="300" onclick="showPrestasi('Juara 6 Lomba gerak jalan putra')">
+          <div class="prestasi-image">
+            <img src="img/PRESTASI/gerak jalan 1.jpg" alt="Gerak jalan indah">
+            <div class="image-overlay">
+              <span>Klik untuk detail</span>
+            </div>
+          </div>
+          <div class="prestasi-content">
+            <h4>Gerak jalan indah</h4>
+            <p>dalam rangka memperingati hari kemerdekaan Indonesia, 2024</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SNBP -->
+  <section id="snbp" class="snbp">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="subtitle" data-aos="fade-up">Prestasi Khusus</span>
+        <h2 data-aos="fade-up" data-aos-delay="100">SNBP 2025</h2>
+      </div>
+
+      <div class="snbp-content">
+        <div class="snbp-image" data-aos="fade-right">
+        
+          <div class="image-container">
+            <img src="img/PRESTASI/SNBP.jpg" alt="SNBP">
+            <div class="image-overlay"></div>
+          </div>
+        </div>
+
+        <div class="snbp-text" data-aos="fade-left">
+          <h4>Siswa Lolos Seleksi Nasional Berdasarkan Prestasi</h4>
+          <p>Beberapa siswa SMAN 4 Toraja Utara berhasil lolos ke Perguruan Tinggi Negeri (PTN) favorit melalui jalur prestasi SNBP 2024. Ini adalah bukti nyata dedikasi siswa dan bimbingan guru yang luar biasa.</p>
+          <button class="btn btn-primary id="lihatDaftarSnbp" >Lihat Daftar Siswa</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak" class="kontak">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="subtitle" data-aos="fade-up">Kontak</span>
+        <h2 data-aos="fade-up" data-aos-delay="100">Informasi Kontak</h2>
+      </div>
+
+      <div class="kontak-card" data-aos="fade-up">
+        <div class="kontak-grid">
+          <div class="kontak-info" data-aos="fade-right">
+            <h3>Hubungi Kami</h3>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>Jl. Praya Limbong, Pangala' Utara, Toraja Utara, Sulawesi Selatan</p>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-phone"></i>
+              <p>08124112240</p>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <p>sman4torajautara@gmail.com</p>
+            </div>
+
+            <h3>Media Sosial</h3>
+            <div class="social-links">
+              <a href="https://facebook.com/sman4torajautara" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-facebook-f"></i>
+                <span>SMAN 4 TORAJA UTARA</span>
+              </a>
+              <a href="https://www.instagram.com/smanegeri4torajautara/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i>
+                <span>@smanegeri4torajautara</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="kontak-form" data-aos="fade-left">
+            <h3>Kirim Pesan</h3>
+            <form id="contactForm" onsubmit="return handleFormSubmit(event)">
+              <div class="form-group">
+                <input type="text" id="nama" placeholder="Nama Anda" required>
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" placeholder="Email Anda" required>
+              </div>
+              <div class="form-group">
+                <textarea id="pesan" rows="4" placeholder="Pesan Anda" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="kontak-map" data-aos="fade-up">
+          <h3>Lokasi Kami</h3>
+          <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d800.3152355310183!2d119.80987786949223!3d-2.898582160427943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d93c0b547e6a52d%3A0xe1bcb79a78eb9e0d!2sSMA%20Negeri%204%20Toraja%20Utara!5e1!3m2!1sid!2sid!4v1745746985043!5m2!1sid!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+                    <img src="img/LOGO SEKOLAH.jpg" alt="Logo Sekolah">
+                </div>
+          <h2>SMAN 4 TORAJA UTARA</h2>
+          <p>Jl. Praya Limbong, Pangala' Utara, Toraja Utara, Sulawesi Selatan</p>
+        </div>
+
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="https://facebook.com/sman4torajautara" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/smanegeri4torajautara/" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Hubungi Kami</h3>
+          <p>Telepon: 08124112240</p>
+          <p>Email: sman4torajautara@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; <span id="current-year"></span> SMAN 4 TORAJA UTARA. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top button -->
+  <button id="scrollToTop" class="scroll-top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close-lightbox">&times;</span>
+    <img id="lightbox-img" class="lightbox-content">
   </div>
 
-  <div class="footer-bottom">
-    &copy; 2025 SMAN 4 TORAJA UTARA. All rights reserved.
-  </div>
-</footer>
-
-
-
-
-
-
-
-
-  
-
-
-  
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-  </body>
+  <!-- AOS Animation Library -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
 </html>
